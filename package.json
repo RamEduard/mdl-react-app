@@ -12,7 +12,8 @@
     "express": "^4.13.4",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "react-mdl": "^1.5.4"
+    "react-mdl": "^1.5.4",
+    "react-router": "^2.4.1"
   },
   "devDependencies": {
     "babel-core": "^6.9.0",
