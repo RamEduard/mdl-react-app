@@ -1,6 +1,6 @@
 # mdl-react-app
 
-Example of react app with mdl components.
+Simple example of react app with mdl components and react-router.
 
 ## Clone 
 
