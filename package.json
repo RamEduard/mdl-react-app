@@ -4,7 +4,7 @@
   "description": "App - Material Design Lite with React components",
   "scripts": {
     "start": "./node_modules/.bin/webpack && node server.js",
-    "webpack": "./node_modules/.bin/webpack"
+    "webpack": "./node_modules/.bin/webpack-dev-server"
   },
   "author": "Ramon Serrano <ramon.calle.88@gmail.com",
   "license": "GPL-3.0",

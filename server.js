@@ -2,6 +2,7 @@
 
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use('/public', express.static('public'));
 
@@ -11,7 +12,7 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index-node.html');
 });
 
-const server = app.listen(8080, () => {
+const server = app.listen(port, () => {
   let port = server.address().port;
   console.log(`Server running at http://localhost:${port}`);
 });

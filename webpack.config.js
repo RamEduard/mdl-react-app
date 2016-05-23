@@ -2,20 +2,18 @@
 var port = process.env.PORT || 3000;
 
 module.exports = {
- entry: './main.js',
+ entry: './src/main.js',
  output: { 
- 	path: __dirname + '/public/js', 
- 	filename: 'app.react.js',
- 	publicPath: '/'
+ 	path: './public',
+ 	filename: 'js/bundle.js'
  },
  devServer: {
     inline: true,
-    contentBase: './public/',
+    contentBase: './public',
     port: port
   },
  module: {
-   loaders: [
-   {
+   loaders: [{
      test: /.js?$/,
      loader: 'babel',
      exclude: /node_modules/,
@@ -23,5 +21,5 @@ module.exports = {
      	presets: ['react', 'es2015']
      }
    }]
- },
+ }
 };
